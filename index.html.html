@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="dadof.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="start-screen" class="screen active">
+            <div class="selection-panel">
+                <h1>Escolha um Dado</h1>
+                <div class="button-container">
+                    <button onclick="selectDice('d2')">d2</button>
+                    <button onclick="selectDice('d4')">d4</button>
+                    <button onclick="selectDice('d6')">d6</button>
+                    <button onclick="selectDice('d8')">d8</button>
+                    <button onclick="selectDice('d10')">d10</button>
+                    <button onclick="selectDice('d12')">d12</button>
+                    <button onclick="selectDice('d20')">d20</button>
+                    <button onclick="selectDice('d30')">d30</button>
+                    <button onclick="selectDice('d100')">d100</button>
+                </div>
+            </div>
+        </div>
+        <div id="dice-screen" class="screen">
+            <h1 id="dice-title"></h1>
+            <div id="dice-result"></div>
+            <div class="button-container">
+                <button id="roll-button" onclick="rollDice()">Rolar Dado</button>
+                <button id="roll-again-button" onclick="rollDice()">Rolar Novamente</button>
+                <button onclick="showStartScreen()">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <script src="dadof.js"></script>
+</body>
+</html>
